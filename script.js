@@ -43,6 +43,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // GitHub Contributions Graph (Add your username)
 const contributionsGraph = document.createElement('img');
-contributionsGraph.src = 'https://ghchart.rshah.org/yourusername';
+contributionsGraph.src = 'https://ghchart.rshah.org/prithibhaskar';
 contributionsGraph.alt = 'GitHub Contributions Graph';
 document.querySelector('#skills .container').appendChild(contributionsGraph);
