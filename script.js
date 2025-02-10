@@ -22,14 +22,14 @@ if (localStorage.getItem('theme') === 'light') {
 }
 
 // Form Handling
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const formData = new FormData(this);
-    // Add your form submission logic here
-    console.log(Object.fromEntries(formData));
-    this.reset();
-    alert('Message sent successfully!');
-});
+// document.getElementById('contactForm').addEventListener('submit', function(e) {
+//     e.preventDefault();
+//     const formData = new FormData(this);
+//     // Add your form submission logic here
+//     console.log(Object.fromEntries(formData));
+//     this.reset();
+//     alert('Message sent successfully!');
+// });
 
 // Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -45,4 +45,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const contributionsGraph = document.createElement('img');
 contributionsGraph.src = 'https://ghchart.rshah.org/prithibhaskar';
 contributionsGraph.alt = 'GitHub Contributions Graph';
+console.log(document.querySelector('#skills .container'));
 document.querySelector('#skills .container').appendChild(contributionsGraph);
